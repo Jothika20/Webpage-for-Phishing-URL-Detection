@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container input[type=number] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.container input[type=number]:nth-child(2n) {
+  margin-left: 10px;
+}
+
+.container button {
+  font-size: large;
+  background-color: #001677;
+  color: white;
+  padding: 16px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.container button:hover {
+  opacity: 1;
+  font-weight: bold;
+  color: #001677;
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Phishing URL Detection</h1>
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <label for="at_count">At Count:</label>
+        <input type="number" class="form-control" placeholder="Enter at_count" name="at_count" id="at_count" required>
+      </div>
+      <div class="col">
+        <label for="https_count">HTTPS Count:</label>
+        <input type="number" class="form-control" placeholder="Enter https_count" name="https_count" id="https_count" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label for="ip_address">IP Address:</label>
+        <input type="number" class="form-control" placeholder="Enter ip_address" name="ip_address" id="ip_address" required>
+      </div>
+      <div class="col">
+        <label for="Login_count">Login Count:</label>
+        <input type="number" class="form-control" placeholder="Enter Login_count" name="Login_count" id="Login_count" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label for="Port_number">Port Number:</label>
+        <input type="number" class="form-control" placeholder="Enter Port_number" name="Port_number" id="Port_number" required>
+      </div>
+      <div class="col">
+        <label for="Query_symbol">Query Symbol:</label>
+        <input type="number" class="form-control" placeholder="Enter Query_symbol" name="Query_symbol" id="Query_symbol" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label for="URL_Length">URL Length:</label>
+        <input type="number" class="form-control" placeholder="Enter URL_Length" name="URL_Length" id="URL_Length" required>
+      </div>
+      <div class="col">
+        <label for="Character_Count">Character Count:</label>
+        <input type="number" class="form-control" placeholder="Enter Character_Count" name="Character_Count" id="Character_Count" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label for="Num_periods">Number Periods:</label>
+        <input type="number" class="form-control" placeholder="Enter Num_periods" name="Num_periods" id="Num_periods" required>
+      </div>
+      <div class="col">
+        <label for="Subdirectory_Count">Subdirectory Count:</label>
+        <input type="number" class="form-control" placeholder="Enter Subdirectory_Count" name="Subdirectory_Count" id="Subdirectory_Count" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Predict</button>
+  </form>
+</div>
+
+</body>
+</html>
+
