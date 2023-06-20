@@ -39,7 +39,7 @@ body {
   margin-left: 10px;
 }
 
-.container button {
+input[type=submit] {
   font-size: large;
   background-color: #001677;
   color: white;
@@ -51,7 +51,7 @@ body {
   opacity: 0.9;
 }
 
-.container button:hover {
+input[type=submit]:hover {
   opacity: 1;
   font-weight: bold;
   color: #001677;
@@ -114,7 +114,7 @@ body {
         <input type="number" class="form-control" placeholder="Enter Subdirectory_Count" name="Subdirectory_Count" id="Subdirectory_Count" required>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Predict</button>
+    <input type="submit" value = "Predict" id="Predict" name="Predict">
   </form>
 </div>
 
